@@ -12,7 +12,7 @@ function HasilDonor({ setPage, filter }) {
 
   // 🔥 AMBIL DATA
   const getData = async () => {
-    const res = await fetch("http://localhost:5000/donor");
+    const res = await fetch("https://donor-backend-production.up.railway.app/donor");
     const data = await res.json();
     setDataDonor(data);
   };

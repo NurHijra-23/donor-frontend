@@ -8,7 +8,7 @@ function EditProfile({ setPage, user }) {
 
   // ambil data terakhir (sementara)
   useEffect(() => {
-    fetch("http://localhost:5000/donor")
+    fetch("https://donor-backend-production.up.railway.app/donor")
       .then(res => res.json())
       .then(res => {
         const data = res[res.length - 1];
@@ -55,7 +55,7 @@ function EditProfile({ setPage, user }) {
     try {
       console.log("UPDATE ID:", form._id);
 
-      const response = await fetch(`http://localhost:5000/donor/${form._id}`, {
+      const response = await fetch(`https://donor-backend-production.up.railway.app/donor/${form._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

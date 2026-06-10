@@ -7,7 +7,7 @@ function ProfileDonor({ setPage, user }) {
   const navigate = useNavigate(); // ✅ tambah
 
   useEffect(() => {
-    fetch("http://localhost:5000/donor")
+    fetch("https://donor-backend-production.up.railway.app/donor")
       .then(res => res.json())
       .then(res => {
         console.log("USER:", user);
@@ -32,7 +32,7 @@ function ProfileDonor({ setPage, user }) {
   try {
 
     await fetch(
-      `http://localhost:5000/donor/${id}`,
+      `https://donor-backend-production.up.railway.app/donor/${id}`,
       {
         method: "PUT",
         headers: {
@@ -64,7 +64,7 @@ function ProfileDonor({ setPage, user }) {
   if (!confirmDelete) return;
 
   try {
-    await fetch(`http://localhost:5000/donor/${id}`, {
+    await fetch(`https://donor-backend-production.up.railway.app/donor/${id}`, {
       method: "DELETE",
     });
 
@@ -88,7 +88,7 @@ function ProfileDonor({ setPage, user }) {
     try {
 
       await fetch(
-        `http://localhost:5000/donor/${id}`,
+        `https://donor-backend-production.up.railway.app/donor/${id}`,
         {
           method: "PUT",
           headers: {

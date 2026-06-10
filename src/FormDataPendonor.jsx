@@ -15,7 +15,7 @@ function FormDataPendonor() {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch("http://localhost:5000/donor", {
+      const res = await fetch("https://donor-backend-production.up.railway.app/donor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

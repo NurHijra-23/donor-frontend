@@ -35,7 +35,7 @@ const handleRegister = async () => {
   }
 
   try {
-    const res = await axios.post("http://localhost:5000/register", {
+    const res = await axios.post("https://donor-backend-production.up.railway.app/register", {
       nama,
       email,
       password,

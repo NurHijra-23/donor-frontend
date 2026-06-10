@@ -1,6 +1,6 @@
 import logo from "./assets/logo.jpeg";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ tambah
+import { useNavigate } from "react-router-dom"; 
 import Swal from "sweetalert2";
 import axios from "axios";
 
@@ -12,7 +12,7 @@ function Login({ setPage, setUser }) {
 
   const handleLogin = async () => {
   try {
-    const res = await axios.post("http://localhost:5000/login", {
+    const res = await axios.post("https://donor-backend-production.up.railway.app/login", {
       email,
       password,
     });
