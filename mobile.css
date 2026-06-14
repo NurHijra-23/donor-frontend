@@ -1,0 +1,44 @@
+/* ===== MOBILE FIX GLOBAL ===== */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+  }
+
+}
+
+/* iPhone */
+@media (max-width: 480px) {
+
+  body {
+    zoom: 0.95;
+  }
+
+}

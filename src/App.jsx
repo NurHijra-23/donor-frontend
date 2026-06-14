@@ -48,6 +48,7 @@ function App() {
 
       <Route path="/cek" element={<CekKelayakan />} />
       <Route path="/form-cek" element={<FormCekKelayakan />} />
+      
       <Route path="/hasil-kelayakan" element={<HasilKelayakan />} />
       <Route path="/tidak-layak" element={<TidakLayakPage />} />
 
