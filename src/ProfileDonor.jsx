@@ -338,13 +338,17 @@ function ProfileDonor({ setPage, user }) {
 const mainLayout = {
   minHeight: "100vh",
   background: "linear-gradient(to bottom, #f8d0d0, #ff4d4d)",
-  padding: "40px",
+  padding: window.innerWidth < 768 ? "15px" : "40px",
 };
 
 const contentGrid = {
   display: "flex",
+  flexDirection:
+    window.innerWidth < 768
+      ? "column"
+      : "row",
   gap: "30px",
-  alignItems: "flex-start",
+  alignItems: "center",
   justifyContent: "center",
 };
 
@@ -354,7 +358,10 @@ const leftSection = {
 };
 
 const rightSection = {
-  width: "300px",
+  width:
+    window.innerWidth < 768
+      ? "100%"
+      : "300px",
 };
 
 const profileCard = {
